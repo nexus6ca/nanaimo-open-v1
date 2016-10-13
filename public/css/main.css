@@ -1,0 +1,160 @@
+html {
+
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 760px;
+    margin: 0 auto;
+    background-color: darkgrey;
+    border: 1px solid #001963;
+    padding: 10px;
+}
+header {
+/*    margin: 0;
+    border-bottom: 2px solid black;
+    padding: 10px;
+    background-color: lightgrey;*/
+
+    border-bottom: #000000;
+    border-bottom-style: solid;
+    background-image: url('../images/stockvault-checkered-grunge-flag134607.jpg');
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+
+}
+header h1 {
+    margin: 0;
+    padding: 10px;
+
+}
+header p {
+    margin: 0;
+    padding: .25em 0 0 0;
+}
+header ul {
+    margin: 0;
+    padding: 1em 0 0 0;
+}
+
+main {
+    margin: 0;
+    padding: .5em 2em .25em;
+}
+footer {
+    clear: both;
+    margin-top: 1em;
+    padding-right: 1em;
+    border-top: 2px solid black;
+}
+footer p {
+    text-align: right;
+    font-size: 80%;
+    margin: 1em 0;
+}
+
+h1 {
+    font-size: 150%;
+    margin: 0;
+    padding: .5em 0 .25em;
+    text-align: center;
+}
+h2 {
+    font-size: 120%;
+    margin: 0;
+    padding: .25em 0 .25em ;
+    text-align: center;
+}
+
+h5 {
+    text-align: center;
+    text-emphasis: filled;
+}
+
+p {
+    margin: .5em 0 .5em 0;
+    padding: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+li {
+    margin: 0;
+    padding: 0;
+}
+nav ul {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+nav ul li {
+    padding-bottom: 0.5em;
+}
+
+a {
+    color: #3333CC;
+    font-weight: bold;
+
+}
+a:hover {
+    color: #3333CC;
+}
+
+table {
+    border: none;
+    border-collapse: collapse;
+    al: center;
+}
+td, th {
+    border: none;
+    padding: .2em .5em .2em .5em;
+    text-align: left;
+}
+#no_border {
+    border: 0;
+}
+#no_border td {
+    border: 0;
+}
+
+form {
+    margin: 0;
+}
+br {
+    clear: left;
+}
+textarea {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 80%;
+}
+
+.title {
+
+}
+
+.error {
+    color: red;
+}
+
+a {
+    background-color: darkgrey;
+}
+
+.info {
+    padding: 10px;
+    border-bottom-style:solid;
+}
+
+span {
+    color: red;
+}
+
+em {
+    font-weight: bold;
+}
+
+.copy {
+    text-align: right;
+}
+

@@ -11,6 +11,12 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'TournamentController@index');
+Route::get('/tournament/add', 'TournamentController@add');
+Route::get('/tournament/display', 'TournamentController@display');
+Route::post('/tournament/save', 'TournamentController@save');
+Route::post('/tournament/save/{id}', 'TournamentController@save');
+Route::get('/tournament/registered', 'TournamentController@registered');
+
+Route::any('{all}', 'TournamentController@index')->where('all', '.*');
+

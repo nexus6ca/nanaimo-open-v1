@@ -29,7 +29,7 @@ class TournamentController extends Controller
     }
 
     public function save($id = null){
-    // Input dat
+    // Input data
 
         if($id != null) {
             //
@@ -42,15 +42,15 @@ class TournamentController extends Controller
         $player->rating              = Input::get('playerRating');
         $player->Email               = Input::get('playerEmail');
         $player->prov                = Input::get('province');
-        $player->altEmail            = Input::get('billingEmail');
+        $player->altEmail            = (Input::get('billingEmail') !== null ? Input::get('billingEmail') : "");
         $player->city                = Input::get('address');
         $player->age                 = Input::get('age');
-        $player->byeRounds           = Input::get('bye');
+        $player->byeRounds           = (Input::get('bye') !== NULL ? Input::get('bye') : "") ;
         $player->membershipOption    = Input::get('CFC');
-        ($player->membershipOption == 'CFCmember' ? $player->CFCNumber = Input::get('CFCNumber')
+        ($player->membershipOption == 'CFCNumber' ? $player->CFCNumber = Input::get('CFCNumber')
                                                   : $player->CFCNumber = 0 );
-        $player->save();
 
+        $player->save();
         return Redirect::to('tournament/display');
     }
 

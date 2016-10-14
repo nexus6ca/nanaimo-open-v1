@@ -39,7 +39,7 @@
                 <p>
                     <label for="playerEmail">Player's Email</label>
                     <input type="email" name="playerEmail" id="playerEmail" required>
-                </p><p><label for "province">If purchasing a CFC membership, please select player's home province/country:</label>
+                </p><p><label for "province">Player's Proviences:</label>
                 <select name ="province" id ="province">
                     <?php foreach($prov as $p) { ?>
                         <option><?=$p?></option>

@@ -13,6 +13,14 @@
     <title>Nanaimo Winter Open - Registered Players</title>
     <link rel="stylesheet" type="text/css" href="/css/main.css">
 </head>
+<header>
+    <div class="title">
+        <H1> Vancouver Island University Chess Club </H1>
+        <h2> Presents </h2>
+        <h1> The 2016 Nanaimo Winter Open Chess Tournament</h1>
+        <h5>A 5 round CFC rated Swiss December 17-18, 2016</h5>
+    </div>
+</header>
 <body>
 <h1>Registered Players</h1>
 <br>

@@ -21,7 +21,7 @@
     <?php
         foreach ($registered as $entry) { ?>
         <tr>
-            <td><?=$entry->firstName . " " . $entry->lastName?></td>
+            <td><?=$entry->firstName?>&nbsp<?= $entry->lastName?></td>
             <td><?=$entry->rating?></td>
             <td><?=$entry->city?></td>
         </tr>

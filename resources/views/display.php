@@ -104,6 +104,6 @@ $registrationDone = true;
 
 </body>
 <footer>
-    <div class="copy">&copy 2016 Jason Willimason</div>
+    <div class="copy">&copy 2016 Jason Williamson</div>
 </footer>
 </html>

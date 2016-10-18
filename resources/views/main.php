@@ -1,21 +1,12 @@
 <?php
-$registrationDone = false;
-?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Nanaimo Winter Open</title>
-    <link rel="stylesheet" type="text/css" href="css/main.css">
-</head>
-<body>
-<div class="title">
-    <H1> Vancouver Island University Chess Club </H1>
-    <h2> Presents </h2>
-    <h1> The 2016 Nanaimo Winter Open Chess Tournament</h1>
-    <h5>A 5 round CFC rated Swiss December 17-18, 2016</h5>
-</div>
+use Symfony\Component\HttpFoundation\RequestMatcherInterface;
 
+$registrationDone = false;
+
+include('header.php');
+?>
+
+<body>
 <div class="info">
     <em>When:</em> Dec 17-18, 2016<br>
     <em>Where:</em> Vancouver Island University<br>
@@ -69,7 +60,4 @@ $registrationDone = false;
     Email: nanaimo.open@gmail.com
 </div>
 </body>
-<footer>
-    &copy 2016 Jason Willimason
-</footer>
-</html>
+<?php include('footer.php');?>

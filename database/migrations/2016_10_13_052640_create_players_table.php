@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateTournamentTable extends Migration
+class CreatePlayersTable extends Migration
 {
     /**
      * Run the migrations.
@@ -17,16 +17,16 @@ class CreateTournamentTable extends Migration
         Schema::create('players', function ($table) {
             $table->increments('id');
             $table->string('email')->unique();
-            $table->string('firstName');
-            $table->string('lastname');
-            $table->integer('rating');
-            $table->string('altEmail');
+            $table->string('firstName', 64);
+            $table->string('lastname', 64);
+            $table->integer('rating')->unsigned();
+            $table->string('altEmail')->nullable();
             $table->string('prov');
             $table->string('city');
             $table->enum('age', array('Adult', 'Junior'));
             $table->string('byeRounds');
             $table->string('membershipOption');
-            $table->integer('CFCNumber');
+            $table->integer('CFCNumber')->nullable();
             $table->timestamps();
         });
     }
@@ -38,6 +38,6 @@ class CreateTournamentTable extends Migration
      */
     public function down()
     {
-        Schema::drop('tournaments');
+        Schema::drop('players');
     }
 }

@@ -9,29 +9,17 @@ body {
     border: 1px solid #001963;
     padding: 10px;
 }
-header {
-/*    margin: 0;
-    border-bottom: 2px solid black;
-    padding: 10px;
-    background-color: lightgrey;*/
 
-    border-bottom: #000000;
-    border-bottom-style: solid;
-    background-image: url('../images/stockvault-checkered-grunge-flag134607.jpg');
-    color: black;
-    text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
-
-}
-header h1 {
+head h1 {
     margin: 0;
     padding: 10px;
 
 }
-header p {
+head p {
     margin: 0;
     padding: .25em 0 0 0;
 }
-header ul {
+head ul {
     margin: 0;
     padding: 1em 0 0 0;
 }
@@ -101,6 +89,21 @@ a:hover {
     color: #3333CC;
 }
 
+.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background-color: #2e3436;
+    padding: 10px;
+}
+
+.button:hover {
+    color:lightgrey;
+}
+
 table {
     border: none;
     border-collapse: collapse;
@@ -130,7 +133,11 @@ textarea {
 }
 
 .title {
-
+    background-image: url('../images/Black-and-White-Chess-Games-l.jpg');
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    border-bottom: #000000;
+    border-bottom-style: solid;
 }
 
 .error {

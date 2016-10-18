@@ -19,4 +19,6 @@ class Players extends Model
         'membershipOption',
         'CFCNumber',
         );
+
+    public $primaryKey=('id');
 }

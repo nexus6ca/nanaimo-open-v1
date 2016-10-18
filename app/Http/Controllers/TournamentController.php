@@ -8,19 +8,23 @@ use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Input;
 use App\Players;
 use App\Http\Requests;
+use Validator;
 
 class TournamentController extends Controller
 {
-    public function index() {
+    public function index()
+    {
         return Redirect::to('/tournament/display');
     }
 
-    public function display() {
+    public function display()
+    {
 
         return view('display');
     }
 
-    public function add(){
+    public function add()
+    {
         $prov = array(
             "BC", "AB", "SK", "MB", "ON", "QC", "NB", "NS", "PEI", "NL", "NWT", "YT", "NU", "USA", "Foriegn"
         );
@@ -28,36 +32,80 @@ class TournamentController extends Controller
         return view('add', ['prov' => $prov]);
     }
 
-    public function save($id = null){
-    // Input data
+    public function save($id = null)
+    {
+        // Input data
 
-        if($id != null) {
-            //
+        if ($id != null) {
+            // Currently not editing players
         } else {
-            $player = new Players();
-        }
-        $player->id = null;
-        $player->firstName           = Input::get('firstName');
-        $player->lastName            = Input::get('lastName');
-        $player->rating              = Input::get('playerRating');
-        $player->Email               = Input::get('playerEmail');
-        $player->prov                = Input::get('province');
-        $player->altEmail            = (Input::get('billingEmail') !== null ? Input::get('billingEmail') : "");
-        $player->city                = Input::get('address');
-        $player->age                 = Input::get('age');
-        $player->byeRounds           = (Input::get('bye') !== NULL ? Input::get('bye') : "") ;
-        $player->membershipOption    = Input::get('CFC');
-        ($player->membershipOption == 'CFCNumber' ? $player->CFCNumber = Input::get('CFCNumber')
-                                                  : $player->CFCNumber = 0 );
+            $formData = Input::all();
 
-        $player->save();
-        return Redirect::to('tournament/display');
+            $validator = Validator::make(
+                array(
+                    'firstName' => $formData['firstName'],
+                    'lastName' => $formData['lastName'],
+                    'rating' => $formData['playerRating'],
+                    'Email' => $formData['playerEmail'],
+                    'prov' => $formData['province'],
+                    'altEmail' => $formData['billingEmail'],
+                    'city' => $formData['address'],
+                    'age' => $formData['age'],
+                    'memberShipOptions' => $formData['CFC'],
+                ),
+                array(
+                    'firstName' => 'required|min:2',
+                    'lastName' => 'required|min:2',
+                    'rating' => 'required',
+                    'Email' => 'unique:players|email',
+                    'prov' => 'required',
+                    'altEmail' => 'email',
+                    'city' => 'required',
+                    'age' => 'required',
+                    'memberShipOptions' => 'required'
+                )
+            );
+
+            if ($validator->passes()) {
+                $player = new Players();
+
+                $player->id = null;
+                $player->firstName = $formData['firstName'];
+                $player->lastName = $formData['lastName'];
+                $player->rating = $formData['playerRating'];
+                $player->Email = $formData['playerEmail'];
+                $player->prov = $formData['province'];
+                $player->altEmail = $formData['billingEmail'];
+                $player->city = $formData['address'];
+                $player->age = $formData['age'];
+                $player->byeRounds = ($formData['bye'] != null?$formData['bye']:"");
+                $player->membershipOption = $formData['CFC'];
+                ($player->membershipOption == 'CFCNumber' ? $player->CFCNumber = $formData['CFCNumber'] : $player->CFCNumber = 0);
+                $player->save();
+
+                return Redirect::to('tournament/registered ')->with('success', true)
+                                 ->with('message', $formData['firstName'] . ' ' . $formData['lastName'] . ' has been registered');
+            } else {
+                $errors = $validator->errors();
+                foreach($errors->all() as $message)
+                {
+                    $messages[] = $message;
+                }
+                return view('error')->with('messages', $messages);
+            }
+        }
     }
+
 
     public function registered()
     {
+
         $players = new Players();
         $registered = $players->all();
         return view('registered')->with('registered', $registered);
+    }
+
+    public function error($validator) {
+        return $errors;
     }
 }

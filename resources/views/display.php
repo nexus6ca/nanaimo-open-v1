@@ -86,7 +86,7 @@ include('header.php');
     <a class="button" href="/tournament/add">Advanced Registration</a><a class="button" href="/tournament/registered">Who is registered</a>
 </div>
 <div class="Accomandation">
-    <em>Accomandation</em>
+    <em>Accommodations</em>
     <p>The Coast Bastion Hotel is offering us a group rate of $105 a night on a first come first serve basis. Some billets at local homes may be available as well.<br>
         Use code: <span>CBI-GFC16053</span></p>
 </div>

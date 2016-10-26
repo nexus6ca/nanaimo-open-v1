@@ -78,7 +78,7 @@ class TournamentController extends Controller
                 $player->altEmail = $formData['billingEmail'];
                 $player->city = $formData['address'];
                 $player->age = $formData['age'];
-                $player->byeRounds = (isset($formData['bye']) ? $formData['bye']:"");
+                $player->byeRounds = (isset($formData['bye']) ? implode(",", $formData['bye']):"");
                 $player->membershipOption = $formData['CFC'];
                 ($player->membershipOption == 'CFCNumber' ? $player->CFCNumber = $formData['CFCNumber'] : $player->CFCNumber = 0);
                 $player->save();

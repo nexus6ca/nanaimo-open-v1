@@ -102,7 +102,7 @@ class TournamentController extends Controller
     {
 
         $players = new Players();
-        $registered = $players->all();
+        $registered = $players->all()->sortByDesc('rating');
         return view('registered')->with('registered', $registered);
     }
 
@@ -118,7 +118,7 @@ class TournamentController extends Controller
         } else {
             // auth good
             $players = new Players();
-            $list = $players->all();
+            $list = $players->all()->sortByDesc('rating');
 
             return view('backend')->with('list', $list);
         }

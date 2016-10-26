@@ -25,7 +25,5 @@
         if(Auth::check()) { ?>
             <a class="button" href="/tournament/backend">Admin View</a>
             <a class="button" href="/logout">Logout</a>
-        <?php  } else { ?>
-            <a class="button" href="/login">Admin Login</a>
-        <?php } ?>
+        <?php  } ?>
 </head>

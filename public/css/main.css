@@ -72,7 +72,7 @@ li {
     padding: 0;
 }
 nav ul {
-    list-style-type: none;
+    list-style-type:  none;
     margin-left: 0;
     padding-left: 0;
 }
@@ -89,7 +89,7 @@ a:hover {
     color: #3333CC;
 }
 
-.button {
+.button  {
     -webkit-appearance: button;
     -moz-appearance: button;
     appearance: button;

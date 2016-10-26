@@ -6,6 +6,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Input;
+use Illuminate\Support\Facades\Auth;
 use App\Players;
 use App\Http\Requests;
 use Validator;
@@ -105,22 +106,21 @@ class TournamentController extends Controller
         return view('registered')->with('registered', $registered);
     }
 
-    public function error($validator) {
-        return $errors;
-    }
-
     /**
      * controller to display backend details - will be behind admin loging
      */
     public function backend() {
         // Check for auth
         // If auth fails do fail stuff
+        if(!(Auth::check())){
+            $messages = "Not authorized.";
+            return view('error')->with('messages', $messages);
+        } else {
+            // auth good
+            $players = new Players();
+            $list = $players->all();
 
-        // auth good
-
-        $players = new Players();
-        $list = $players->all();
-
-        return view('backend')->with('list', $list);
+            return view('backend')->with('list', $list);
+        }
     }
 }

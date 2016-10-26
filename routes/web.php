@@ -11,7 +11,7 @@
 |
 */
 Auth::routes();
-// Route::get('/register', 'TournamentController@index');
+Route::get('/register', 'TournamentController@index');
 Route::get('/', 'TournamentController@index');
 Route::get('/tournament/add', 'TournamentController@add');
 Route::get('/tournament/display', 'TournamentController@display');

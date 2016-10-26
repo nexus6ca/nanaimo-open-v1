@@ -108,4 +108,19 @@ class TournamentController extends Controller
     public function error($validator) {
         return $errors;
     }
+
+    /**
+     * controller to display backend details - will be behind admin loging
+     */
+    public function backend() {
+        // Check for auth
+        // If auth fails do fail stuff
+
+        // auth good
+
+        $players = new Players();
+        $list = $players->all();
+
+        return view('backend')->with('list', $list);
+    }
 }

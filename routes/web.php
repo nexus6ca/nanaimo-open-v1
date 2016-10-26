@@ -17,6 +17,7 @@ Route::get('/tournament/display', 'TournamentController@display');
 Route::post('/tournament/save', 'TournamentController@save');
 Route::post('/tournament/save/{id}', 'TournamentController@save');
 Route::get('/tournament/registered', 'TournamentController@registered');
+route::get('/tournament/backend', 'TournamentController@backend');
 
 Route::any('{all}', 'TournamentController@index')->where('all', '.*');
 

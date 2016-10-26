@@ -18,7 +18,8 @@
         <h2> Presents </h2>
         <h1> The 2016 Nanaimo Winter Open Chess Tournament</h1>
         <h5>A 5 round CFC rated Swiss December 17-18, 2016</h5>
-    </div>
 
+    </div>
     <a class="button" style="float: right; margnin-right:10px;" href="/tournament/display">Home</a>
+
 </head>

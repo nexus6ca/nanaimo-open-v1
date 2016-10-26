@@ -16,7 +16,7 @@ class CreatePlayersTable extends Migration
 
         Schema::create('players', function ($table) {
             $table->increments('id');
-            $table->string('email')->unique();
+            $table->string('email')->unique()->required;
             $table->string('firstName', 64);
             $table->string('lastname', 64);
             $table->integer('rating')->unsigned();

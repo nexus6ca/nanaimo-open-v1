@@ -6,7 +6,7 @@ include('header.php');
 <div class="info">
     <em>When:</em> Dec 17-18, 2016<br>
     <em>Where:</em> Vancouver Island University, Building 300 - Royal Arbutus Room<br>
-    <em>Map: placeholder</em>
+    <a class="button" style = "display:block; text-align:center;" href="/images/VIU-Nanaimo-Campus-Map.png" target="popup" onclick="window.open('/images/VIU-Nanaimo-Campus-Map.png','VIU MAP','width=750,height=850')">Map of VIU</a>
     <em>Rounds:</em> Sat 10AM, 2PM, 6PM, Sun 9:00AM, ASAP.<br>
     <em>Time Control:</em> Game/60 + 30 second increment<br>
     <p><em>Ratings:</em> This event is CFC rated. If you have another national rating that will be used if higher</p>

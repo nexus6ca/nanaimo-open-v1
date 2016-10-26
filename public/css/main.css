@@ -157,7 +157,12 @@ span {
     color: red;
 }
 
+
 em {
+    font-weight: bold;
+}
+
+label {
     font-weight: bold;
 }
 

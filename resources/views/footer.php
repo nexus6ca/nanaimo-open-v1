@@ -6,5 +6,5 @@
  */
 ?>
 <footer>
-    &copy 2016 Jason Willimason
+    &copy 2016 Jason Williamson
 </footer>

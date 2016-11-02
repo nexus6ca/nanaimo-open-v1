@@ -87,7 +87,7 @@ include('header.php');
 </div>
 <div class="Accomandation">
     <em>Accommodations</em>
-    <p>The Coast Bastion Hotel is offering us a group rate of $105 a night on a first come first serve basis. Some billets at local homes may be available as well.<br>
+    <p>The Coast Bastion Hotel is offering us a group rate of $105 a night on a first come first serve basis. To book you need to call the hotel at: (250)753-6601<br>
         Use code: <span>CBI-GFC16053</span></p>
 </div>
 <div class="conatct">

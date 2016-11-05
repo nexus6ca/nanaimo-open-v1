@@ -21,9 +21,12 @@
 
     </div>
     <a class="button"  href="/tournament/display">Home</a>
+    <a class="button" href="/tournament/add">Advanced Registration</a>
+    <a class="button" href="/tournament/registered">Who is registered</a>
     <?php
         if(Auth::check()) { ?>
             <a class="button" href="/tournament/backend">Admin View</a>
             <a class="button" href="/logout">Logout</a>
         <?php  } ?>
+    
 </head>

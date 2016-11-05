@@ -3,6 +3,7 @@ $registrationDone = true;
 include('header.php');
 ?>
 <body>
+<wrap>
 <div class="info">
     <em>When:</em> Dec 17-18, 2016<br>
     <em>Where:</em> Vancouver Island University, Building 300 - Royal Arbutus Room<br>
@@ -82,9 +83,7 @@ include('header.php');
     </p>
 </div>
 <br>
-<div class="advancedRegistration">
-    <a class="button" href="/tournament/add">Advanced Registration</a><a class="button" href="/tournament/registered">Who is registered</a>
-</div>
+
 <div class="Accomandation">
     <em>Accommodations</em>
     <p>The Coast Bastion Hotel is offering us a group rate of $105 a night on a first come first serve basis. To book you need to call the hotel at: (250)753-6601<br>
@@ -96,6 +95,7 @@ include('header.php');
 </div>
 
 <!-- PayPal Logo --><table border="0" cellpadding="10" cellspacing="0" align="center"><tr><td align="center"></td></tr><tr><td align="center"><a href="https://www.paypal.com/webapps/mpp/paypal-popup" title="How PayPal Works" onclick="javascript:window.open('https://www.paypal.me/nanaimoopen/40','WIPaypal','toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1060, height=700'); return false;"><img src="https://www.paypalobjects.com/webstatic/mktg/logo/pp_cc_mark_37x23.jpg" border="0" alt="PayPal Logo"></a></td></tr></table><!-- PayPal Logo -->
+</wrap>
 </body>
 <footer>
     <div class="copy">&copy 2016 Jason Williamson</div>

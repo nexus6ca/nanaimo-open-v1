@@ -1,24 +1,9 @@
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/html">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="/css/main.css">
-    <title>Early Registration</title>
-</head>
+<?php include('header.php'); ?>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 <body>
-    <header>
-        <div class="title">
-            <H1> Vancouver Island University Chess Club </H1>
-            <h2> Presents </h2>
-            <h1> The 2016 Nanaimo Winter Open Chess Tournament</h1>
-            <h5>A 5 round CFC rated Swiss December 17-18, 2016</h5>
-            <h1>Early Registration</h1>
-        </div>
-    </header>
 
     <div class="form">
         <form method="post" action="/tournament/save" name="registration_form">
@@ -104,7 +89,6 @@
 <script>
     $("#CFCmember").on("click", function(){
         $(".CFCNumber").toggle("slow", function(){
-            // Annimation complete.
         });
     });
 </script>

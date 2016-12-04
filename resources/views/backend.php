@@ -4,7 +4,6 @@
  * Date: 10/25/2016
  * Author: Jason Williamson
  */
-// AUTH CHECK HERE
 
 include('header.php');
 ?>
@@ -16,7 +15,7 @@ include('header.php');
 
     <?php
         foreach ($list as $entry) { ?>
-            <div class="player_card<?php '  . $entry->lastname . $entry->firstName . '?>" style = "border:2px solid; margin-bottom: 10px;">
+            <div class="player_card<?=$entry->id?>" style = "border:2px solid; margin-bottom: 10px;">
                 <label>Name </label><?=$entry->firstName?>&nbsp<?= $entry->lastname?><br>
                 <label>Email </label><?=$entry->email?><br>
                 <label>Billing Email </label><?=$entry->altEmail?><br>
@@ -24,9 +23,8 @@ include('header.php');
                 <label>CFC Info </label><?=$entry->memberShipOption?>, <?=$entry->CFCNumber?>, <?=$entry->rating?><br>
                 <label>Age </label><?=$entry->age?><br>
                 <label>Byes </label><?=$entry->byeRounds?><br>
+                <label>Register Date </label><?=$entry->created_at?><br>
             </div>
         <?php } ?>
-    </table>
-
     </body>
 <?php include('footer.php');

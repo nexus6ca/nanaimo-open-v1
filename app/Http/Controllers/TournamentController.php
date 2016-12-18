@@ -123,4 +123,26 @@ class TournamentController extends Controller
             return view('backend')->with('list', $list);
         }
     }
+
+    /**
+     *
+     */
+
+    public function player_edit($id) {
+        if(!(Auth::check())){
+            $messages = "Not authorized.";
+            return view('error')->with('messages', $messages);
+        } else {
+            // auth good
+            $player =  Players::find($id);
+
+            return view('player_edit')->with('player', $player);
+        }
+
+    }
+
+    public function results() {
+        return view('results');
+    }
+
 }

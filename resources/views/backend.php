@@ -24,6 +24,7 @@ include('header.php');
                 <label>Age </label><?=$entry->age?><br>
                 <label>Byes </label><?=$entry->byeRounds?><br>
                 <label>Register Date </label><?=$entry->created_at?><br>
+                <a class="button"  href="/tournament/player_edit">Edit</a>
             </div>
         <?php } ?>
     </body>

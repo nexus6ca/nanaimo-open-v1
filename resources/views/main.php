@@ -5,8 +5,13 @@ $registrationDone = false;
 
 include('header.php');
 ?>
-
 <body>
+
+<H1>Weather Warning</H1>
+<p>
+    Check here Friday morning to check on the status of the tournament. Based on the current weather reports we plan to
+go ahead with the tournament. I will post it here if that changes.
+</p>
 <div class="info">
     <em>When:</em> Dec 17-18, 2016<br>
     <em>Where:</em> Vancouver Island University<br>

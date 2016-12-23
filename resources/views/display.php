@@ -3,99 +3,37 @@ $registrationDone = true;
 include('header.php');
 ?>
 <body>
-<wrap>
-<div class="info">
-    <em>When:</em> Dec 17-18, 2016<br>
-    <em>Where:</em> Vancouver Island University, Building 300 - Royal Arbutus Room<br>
-    <a href="/images/VIU-Nanaimo-Campus-Map.png">Map of VIU</a><br>
-    <em>Rounds:</em> Sat 10AM, 2PM, 6PM, Sun 9:00AM, ASAP.<br>
-    <em>Time Control:</em> Game/60 + 30 second increment<br>
-    <p><em>Ratings:</em> This event is CFC rated. If you have another national rating that will be used if higher</p>
-    <p><em>Prizes and Sections:</em> All entry fees returned as prizes less expenses. The tournament
-        format will be one or two sections based on the turnout and distribution of players. If there is enough players
-        for two sections then unrated will be able to choose to play in the open section for the top prizes or in the
-        lower section for the unrated prize.
-    </p>
-    <p><em>Equipment:</em>Please bring your own sets and clocks.</p>
-</div>
-<div class="prizeInfo">
-    An example breakdown - based on 40 entries:<br>
-    <br>
-    <table class="prizeFund">
-        <tr>
-            <th>Open</th>
-            <th></th>
-            <th>Under 1800</th>
-            <th></th>
-        </tr>
-        <tr>
-            <td>1st</td>
-            <td>$280</td>
-            <td>1st <1800</td>
-            <td>$200</td>
-        </tr>
-        <tr>
-            <td>2nd</td>
-            <td>$180</td>
-            <td>2nd <1800</td>
-            <td>$140</td>
-        </tr>
-        <tr>
-            <td>1st <2200</td>
-            <td>$140</td>
-            <td>1st<1600</td>
-            <td>$140</td>
-        </tr>
-        <tr>
-            <td>1st <2000</td>
-            <td>$140</td>
-            <td>1st <1400</td>
-            <td>$140</td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td>1st Unrated</td>
-            <td>$100</td>
-        </tr>
-    </table>
-    <br>
-    <em>(This prize structure is subject to change based on turn out and distribution of players).</em>
-</div>
-<div class="entryFees">
-    <p>
-        <em>Entry Fees:</em> Early entry $40 by November 15th (payable via Cheque, Interact Money Transfer or PayPal), After
-        November 15 and Onsite $50
-        Free entry for players rated over 2400 and entry fee as minimum prize for players from 2200-2400. Unrated players
-        may play for the unrated prize or the top place prizes.
-    </p>
-    <p>
-    <em>Payment:</em>
-        You have three ways to send payment for an advanced entry - Paypal or interact email transfer. You can also defer payment
-        until the tournament date, but then your early entry fee discount will be $5.00.
-        If you choose to use paypal you can click the PayPal button.
+<h1>The Nanaimo Winter Open</h1>
 
-        For Interact send the payment to nanaimo.open@gmail.com.
-    </p>
-    <p>
-        <em>CFC Membership required.</em> Tournament Memberships are $16 or $38 a year for BC Residents. For first time
-        players or CFC members who haven’t played in 5 or more year: free Tournament memberships.
-    </p>
-</div>
-<br>
+The tournament is finished, see you in March for the Nanaimo Spring Open. Details to follow!
 
-<div class="Accomandation">
-    <em>Accommodations</em>
-    <p>The Coast Bastion Hotel is offering us a group rate of $105 a night on a first come first serve basis. To book you need to call the hotel at: (250)753-6601<br>
-        Use code: <span>CBI-GFC16053</span></p>
-</div>
-<div class="conatct">
-    <em>Organizers:</em> Nick Peters (250)607-7999 , Jason Williamson (250)797-0231<br>
-    <em>Email:</em> nanaimo.open@gmail.com<br>
-</div>
+<H3>Nanaimo Winter Open 2016</H3><P>
+<TABLE BORDER=1 FRAME="border" RULES="all" CELLPADDING=3  CELLSPACING=3>
+    <TR><TD><B>#</B></TD><TD><B>Place</B></TD><TD><B>Name</B></TD><TD><B>ID</B></TD><TD><B>Rtng</B></TD><TD><B>Rd 1</B></TD><TD><B>Rd 2</B></TD><TD><B>Rd 3</B></TD><TD><B>Rd 4</B></TD><TD><B>Rd 5</B></TD><TD><B>Tot</B></TD></I></B></TR>
+    <TR><TD>1</TD><TD>1</TD><TD>Jason Williamson</TD><TD>106287</TD><TD>2022</TD><TD>W17</TD><TD>W7</TD><TD>W3</TD><TD>W9</TD><TD>D4</TD><TD> 4.5</TD></TR>
+    <TR><TD>2</TD><TD>2</TD><TD>David Deimert</TD><TD>123560</TD><TD>1635</TD><TD>W18</TD><TD>D14</TD><TD>W6</TD><TD>D3</TD><TD>W11</TD><TD> 4.0</TD></TR>
+    <TR><TD>3</TD><TD>3-4</TD><TD>Jamie Campbell</TD><TD>124453</TD><TD>1903</TD><TD>W12</TD><TD>W11</TD><TD>L1</TD><TD>D2</TD><TD>W8</TD><TD> 3.5</TD></TR>
+    <TR><TD>4</TD><TD>&nbsp;</TD><TD>Paul Leblanc</TD><TD>104186</TD><TD>1792</TD><TD>H---</TD><TD>D5</TD><TD>W12</TD><TD>W16</TD><TD>D1</TD><TD> 3.5</TD></TR>
+    <TR><TD>5</TD><TD>5-7</TD><TD>Roger Patterson</TD><TD>103043</TD><TD>2086</TD><TD>H---</TD><TD>D4</TD><TD>W14</TD><TD>W6</TD><TD>U---</TD><TD> 3.0</TD></TR>
+    <TR><TD>6</TD><TD>&nbsp;</TD><TD>Nicholas Peters</TD><TD>133193</TD><TD>1550</TD><TD>W19</TD><TD>W15</TD><TD>L2</TD><TD>L5</TD><TD>W10</TD><TD> 3.0</TD></TR>
+    <TR><TD>7</TD><TD>&nbsp;</TD><TD>Louis Lapi</TD><TD>102089</TD><TD>1444</TD><TD>W20</TD><TD>L1</TD><TD>W15</TD><TD>L10</TD><TD>W16</TD><TD> 3.0</TD></TR>
+    <TR><TD>8</TD><TD>8-15</TD><TD>Frank O'Brien</TD><TD>139824</TD><TD>1785</TD><TD>L13</TD><TD>W10</TD><TD>H---</TD><TD>W14</TD><TD>L3</TD><TD> 2.5</TD></TR>
+    <TR><TD>9</TD><TD>&nbsp;</TD><TD>Nicolau dos Santos</TD><TD>160780</TD><TD>1690</TD><TD>W22</TD><TD>W13</TD><TD>H---</TD><TD>L1</TD><TD>U---</TD><TD> 2.5</TD></TR>
+    <TR><TD>10</TD><TD>&nbsp;</TD><TD>Mau-Seng Lee</TD><TD>100313</TD><TD>1542</TD><TD>H---</TD><TD>L8</TD><TD>W17</TD><TD>W7</TD><TD>L6</TD><TD> 2.5</TD></TR>
+    <TR><TD>11</TD><TD>&nbsp;</TD><TD>Elroy Deimert</TD><TD>106163</TD><TD>1523</TD><TD>W21</TD><TD>L3</TD><TD>D13</TD><TD>X19</TD><TD>L2</TD><TD> 2.5</TD></TR>
+    <TR><TD>12</TD><TD>&nbsp;</TD><TD>William Landstrom</TD><TD>162880</TD><TD>1054</TD><TD>L3</TD><TD>W21</TD><TD>L4</TD><TD>D13</TD><TD>W18</TD><TD> 2.5</TD></TR>
+    <TR><TD>13</TD><TD>&nbsp;</TD><TD>Bo Wen [Angelina] Yang</TD><TD>156475</TD><TD>924</TD><TD>W8</TD><TD>L9</TD><TD>D11</TD><TD>D12</TD><TD>D15</TD><TD> 2.5</TD></TR>
+    <TR><TD>14</TD><TD>&nbsp;</TD><TD>Simon Wang</TD><TD>&nbsp;</TD><TD>unr.</TD><TD>W16</TD><TD>D2</TD><TD>L5</TD><TD>L8</TD><TD>W22</TD><TD> 2.5</TD></TR>
+    <TR><TD>15</TD><TD>&nbsp;</TD><TD>Nitin Wilson</TD><TD>162738</TD><TD>unr.</TD><TD>B---</TD><TD>L6</TD><TD>L7</TD><TD>W21</TD><TD>D13</TD><TD> 2.5</TD></TR>
+    <TR><TD>16</TD><TD>16-18</TD><TD>Bernie Stanley</TD><TD>160971</TD><TD>1422</TD><TD>L14</TD><TD>W18</TD><TD>W20</TD><TD>L4</TD><TD>L7</TD><TD> 2.0</TD></TR>
+    <TR><TD>17</TD><TD>&nbsp;</TD><TD>Ralph Finck</TD><TD>111996</TD><TD>1306</TD><TD>L1</TD><TD>L19</TD><TD>L10</TD><TD>W22</TD><TD>W20</TD><TD> 2.0</TD></TR>
+    <TR><TD>18</TD><TD>&nbsp;</TD><TD>Michael Golobic</TD><TD>&nbsp;</TD><TD>unr.</TD><TD>L2</TD><TD>L16</TD><TD>W22</TD><TD>W20</TD><TD>L12</TD><TD> 2.0</TD></TR>
+    <TR><TD>19</TD><TD>19</TD><TD>Brandon Hathaway</TD><TD>&nbsp;</TD><TD>unr.</TD><TD>L6</TD><TD>W17</TD><TD>H---</TD><TD>F11</TD><TD>U---</TD><TD> 1.5</TD></TR>
+    <TR><TD>20</TD><TD>20</TD><TD>Robert McFetridge</TD><TD>&nbsp;</TD><TD>unr.</TD><TD>L7</TD><TD>W22</TD><TD>L16</TD><TD>L18</TD><TD>L17</TD><TD> 1.0</TD></TR>
+    <TR><TD>21</TD><TD>21</TD><TD>Nazim Leulmi</TD><TD>&nbsp;</TD><TD>unr.</TD><TD>L11</TD><TD>L12</TD><TD>H---</TD><TD>L15</TD><TD>U---</TD><TD> 0.5</TD></TR>
+    <TR><TD>22</TD><TD>22</TD><TD>Gregory Skala</TD><TD>146600</TD><TD>838</TD><TD>L9</TD><TD>L20</TD><TD>L18</TD><TD>L17</TD><TD>L14</TD><TD> 0.0</TD></TR>
+</TABLE>
 
-<!-- PayPal Logo --><table border="0" cellpadding="10" cellspacing="0" align="center"><tr><td align="center"></td></tr><tr><td align="center"><a href="https://www.paypal.com/webapps/mpp/paypal-popup" title="How PayPal Works" onclick="javascript:window.open('https://www.paypal.me/nanaimoopen/40','WIPaypal','toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1060, height=700'); return false;"><img src="https://www.paypalobjects.com/webstatic/mktg/logo/pp_cc_mark_37x23.jpg" border="0" alt="PayPal Logo"></a></td></tr></table><!-- PayPal Logo -->
-</wrap>
 </body>
 <footer>
     <div class="copy">&copy 2016 Jason Williamson</div>
